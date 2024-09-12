@@ -3,18 +3,16 @@
     "build": {
         "dockerfile": "Dockerfile"
     },
-    // "features": {
-    //     "ghcr.io/devcontainers/features/node:1": {}
-    // },
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {}
+    },
     "customizations": {
         "vscode": {
             "settings": {
                 "terminal.integrated.shell.linux": "/bin/bash"
             }
         }
-    }
-    // "postCreateCommand": [
-    //     ". ${NVM_DIR}/nvm.sh && nvm install --lts",
-    //     "npm install --save-dev husky"
-    // ]
+    },
+    "postCreateCommand":
+        ". ${NVM_DIR}/nvm.sh && nvm install --lts"
 }
