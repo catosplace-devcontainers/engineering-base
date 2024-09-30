@@ -1,0 +1,17 @@
+name: Prebuild Devcontainer
+
+on:
+    # This workflow runs on pushes to the main branch and pull requests.
+    push:
+        branches:
+            - main
+    pull_request:
+
+jobs:
+    prebuild-devcontainer:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+          

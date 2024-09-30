@@ -4,13 +4,20 @@
         "dockerfile": "Dockerfile"
     },
     "features": {
-        "ghcr.io/devcontainers/features/node:1": {}
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "lts"
+        }
     },
     "customizations": {
         "vscode": {
             "settings": {
                 "terminal.integrated.shell.linux": "/bin/bash"
-            }
+            },
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "github.vscode-github-actions"
+            ]
         }
     },
     "postCreateCommand":
