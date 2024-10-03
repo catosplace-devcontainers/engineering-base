@@ -1,2 +1,6 @@
+# act environment file
+.env
+.secrets
+
 # Dependency directories
 node_modules/
