@@ -26,7 +26,14 @@ jobs:
               uses: docker/login-action@v2
               with:
                 registry: ghcr.io
-                username: ${{ github.actor }}
+                username: ${{ github.actor || 'psellars' }}
                 password: ${{ secrets.GITHUB_TOKEN }}
-
+                
+            # Per-build the container image
+            - name: Pre-build the container image
+              uses: devcontainers/ci@v0.3
+              with:
+                imageName: ghcr.io/catosplace-devcontainers/engineering-base
+                cacheFrom: ghcr.io/catosplace-devcontainers/engineering-base
+                push: always
           
