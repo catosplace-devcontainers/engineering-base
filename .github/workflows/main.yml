@@ -7,12 +7,12 @@ on:
             - main
     pull_request:
 
+permissions:
+  packages: write
+
 jobs:
     prebuild-devcontainer:
         runs-on: ubuntu-latest
-
-        permissions:
-          packages: write
 
         steps:
 
