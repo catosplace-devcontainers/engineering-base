@@ -1,3 +1,18 @@
 # act
 *.env
 *.secrets
+
+# git
+.git
+.gitattributes
+
+# commitlint
+commitlint.config.js
+.husky
+
+# Dependencies
+node_modules
+package*.json
+
+# Docs
+*.md
