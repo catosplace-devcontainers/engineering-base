@@ -1,6 +1,9 @@
 # Use the official Microsoft Ubuntu 24.04 image as a base
 FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu-24.04
 
+# Connect the container image to the GitHub repository
+LABEL org.opencontainers.image.source=https://github.com/catosplace-devcontainers/engineering-base
+
 # Install dependencies
 RUN apt-get update && apt-get install -y \
     git \
