@@ -32,7 +32,7 @@ jobs:
                 username: ${{ github.actor || 'petersellars' }}
                 password: ${{ secrets.GITHUB_TOKEN }}
                 
-            # Per-build the container image
+            # Pre-build the container image
             - name: Pre-build the container image
               uses: devcontainers/ci@v0.3
               with:
