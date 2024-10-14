@@ -1,11 +1,22 @@
 name: Prebuild Devcontainer
 
 on:
-    # This workflow runs on pushes to the main branch and pull requests.
+    # This workflow runs on pushes to the main branch and pull requests
+    # when the .devcontainer folder is modified or the .dockerignore file
+    # is modified.
     push:
         branches:
             - main
+        paths:
+            - .devcontainer/**
+            - .dockerignore
+            - .github/workflows/prebuild.yml
+
     pull_request:
+        paths:
+            - .devcontainer/**
+            - .dockerignore
+            - .github/workflows/prebuild.yml
 
 permissions:
   packages: write
