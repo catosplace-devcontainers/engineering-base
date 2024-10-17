@@ -1,7 +1,10 @@
 {
     "name": "Catosplace Engineering Base Dev Container",
     "build": {
-        "dockerfile": "Dockerfile"
+        "dockerfile": "Dockerfile",
+        "args": {
+            "ENABLE_DOCKER": "false"
+        }
     },
     "features": {
         "ghcr.io/devcontainers/features/node:1": {
@@ -20,6 +23,10 @@
             ]
         }
     },
+    // "runArgs": [
+    //     "--mount",
+    //     "type=bind,source=/var/run/docker.sock,target=/var/run/docker.sock"
+    // ],
     "postCreateCommand":
         ". ${NVM_DIR}/nvm.sh && nvm install --lts"
 }
