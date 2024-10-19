@@ -2,7 +2,7 @@
 FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu-24.04
 
 # Docker CLI build argument
-ARG ENABLE_DOCKER=false
+ARG INSTALL_DOCKER_CLI=false
 
 # Connect the container image to the GitHub repository
 LABEL org.opencontainers.image.source=https://github.com/catosplace-devcontainers/engineering-base
@@ -17,8 +17,8 @@ RUN apt-get update && apt-get install -y \
 
 # Install Docker CLI
 # Use the build argument to conditionally install the Docker CLI
-RUN if [ "$ENABLE_DOCKER" = "true" ]; then \
-    echo "Docker will be enabled"; \
+RUN if [ "$INSTALL_DOCKER_CLI" = "true" ]; then \
+    echo "Docker CLI will be installed"; \
     apt-get update && \
     apt-get install -y ca-certificates curl gnupg && \
     install -m 0755 -d /etc/apt/keyrings && \
@@ -30,7 +30,7 @@ RUN if [ "$ENABLE_DOCKER" = "true" ]; then \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* \
     else \
-      echo "Docker will not be enabled"; \
+      echo "Docker CLI will not be installed"; \
     fi
 
 # Clone the adr-tools repository
