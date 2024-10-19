@@ -3,7 +3,7 @@
     "build": {
         "dockerfile": "Dockerfile",
         "args": {
-            "ENABLE_DOCKER": "false"
+            "INSTALL_DOCKER_CLI": "${localEnv:INSTALL_DOCKER_CLI}"
         }
     },
     "features": {
@@ -27,6 +27,10 @@
     //     "--mount",
     //     "type=bind,source=/var/run/docker.sock,target=/var/run/docker.sock"
     // ],
+    "runArgs": [
+        // Provides a name for the container when using Docker Desktop
+        "--name", "engineering-base"
+    ],
     "postCreateCommand":
         ". ${NVM_DIR}/nvm.sh && nvm install --lts"
 }
