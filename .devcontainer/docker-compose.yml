@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  engineering-base:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        INSTALL_DOCKER_CLI : ${INSTALL_DOCKER_CLI:-false}
+    # env_file:
+    #   - .devcontainer.env
+    volumes:
+      - ..:/workspaces/engineering-base:cached
+    command: sleep infinity

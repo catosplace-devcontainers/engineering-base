@@ -1,7 +1,7 @@
 # Use the official Microsoft Ubuntu 24.04 image as a base
 FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu-24.04
 
-# Docker CLI build argument
+# Install Docker CLI Environment Variable
 ARG INSTALL_DOCKER_CLI=false
 
 # Connect the container image to the GitHub repository
