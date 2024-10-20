@@ -1,0 +1,6 @@
+version: '3.8'
+
+services:
+  engineering-base:
+    volumes:
+      - ${MOUNT_DOCKER_SOCKET:-/dev/null:/dev/null}

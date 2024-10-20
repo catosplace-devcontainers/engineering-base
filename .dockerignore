@@ -16,3 +16,6 @@ package*.json
 
 # Docs
 *.md
+
+# Allow the .devcontainer/.env file
+!.devcontainer/.env

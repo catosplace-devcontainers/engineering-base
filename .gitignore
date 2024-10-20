@@ -4,3 +4,6 @@
 
 # Dependencies
 node_modules
+
+# Allow the .devcontainer/.env file
+!.devcontainer/.env

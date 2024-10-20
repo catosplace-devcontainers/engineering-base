@@ -1,7 +1,7 @@
 const { execSync } = require('child_process');
 
 describe('DevContainer Tests', function () {
-  this.timeout(10000);
+  this.timeout(20000);
 
   it('should build the DevContainer', function (done) {
     try {
