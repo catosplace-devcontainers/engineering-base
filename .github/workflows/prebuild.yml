@@ -45,7 +45,7 @@ jobs:
                 
             # Pre-build the container image
             - name: Pre-build the container image
-              uses: devcontainers/ci@v0.3.1900000292
+              uses: devcontainers/ci@v0.3.1900000349
               with:
                 imageName: ghcr.io/catosplace-devcontainers/engineering-base
                 cacheFrom: ghcr.io/catosplace-devcontainers/engineering-base
