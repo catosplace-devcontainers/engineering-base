@@ -7,7 +7,7 @@
   "packageRules": [
     {
       "matchManagers": ["github-actions"],
-      "versioning": "semver"
+      "versioning": "semver-coerced"
     }
   ]	
 }
