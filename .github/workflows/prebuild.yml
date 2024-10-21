@@ -33,7 +33,7 @@ jobs:
 
             # Set Docker buildx up for container build
             - name: Set up Docker buildx
-              uses: docker/setup-buildx-action@v2.10.0
+              uses: docker/setup-buildx-action@v3.7.1
 
             # Log into GitHub Container Registry (GHCR) to store the image
             - name: Log into GitHub Container Registry
