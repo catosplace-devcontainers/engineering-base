@@ -5,5 +5,18 @@
     ":dependencyDashboard",
     "helpers:pinGitHubActionDigests"
   ],
-  "baseBranches": ["main"]
+  "baseBranches": ["main"],
+  "regexManagers": [
+    {
+      "fileMatch": ["devcontainer.json"],
+      "matchStrings": [
+        "\"ghcr\\.io/devcontainers/features/node:(?<currentValue>[\\d\\.]+)\"",
+        "\"version\": \"(?<version>[\\d\\.]+)\"",
+        "\"nvmVersion\": \"(?<nvmVersion>[\\d\\.]+)\""
+      ],
+      "depNameTemplate": "devcontainer feature - node",
+      "datasourceTemplate": "docker",
+      "versioningStrategy": "semver"
+    }
+  ]
 }
