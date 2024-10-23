@@ -1,13 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    ":dependencyDashboard",
+    "helpers:pinGitHubActionDigests"
   ],
-  "baseBranches": ["main"],
-  "packageRules": [
-    {
-      "matchManagers": ["github-actions"],
-      "versioning": "semver"
-    }
-  ]	
+  "baseBranches": ["main"]
 }
