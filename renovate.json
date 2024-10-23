@@ -10,12 +10,20 @@
     {
       "fileMatch": ["devcontainer.json"],
       "matchStrings": [
-        "\"ghcr\\.io/devcontainers/features/node:(?<currentValue>[\\d\\.]+)\"",
-        "\"version\": \"(?<version>[\\d\\.]+)\"",
-        "\"nvmVersion\": \"(?<nvmVersion>[\\d\\.]+)\""
+        "\"version\": \"(?<currentValue>[\\d\\.]+)\""
       ],
-      "depNameTemplate": "devcontainer feature - node",
-      "datasourceTemplate": "docker",
+      "depNameTemplate": "Node.js version",
+      "datasourceTemplate": "node",
+      "versioningTemplate": "semver"
+    },
+    {
+      "fileMatch": ["devcontainer.json"],
+      "matchStrings": [
+        "\"nvmVersion\": \"(?<currentValue>[\\d\\.]+)\""
+      ],
+      "depNameTemplate": "NVM",
+      "datasourceTemplate": "github-releases",
+      "lookupNameTemplate": "nvm-sh/nvm",
       "versioningTemplate": "semver"
     }
   ]
