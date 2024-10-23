@@ -16,7 +16,7 @@
       ],
       "depNameTemplate": "devcontainer feature - node",
       "datasourceTemplate": "docker",
-      "versioningStrategy": "semver"
+      "versioningTemplate": "semver"
     }
   ]
 }
