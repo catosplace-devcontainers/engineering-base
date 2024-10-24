@@ -23,7 +23,5 @@
                 "github.vscode-github-actions"
             ]
         }
-    },
-    "postCreateCommand":
-        ". ${NVM_DIR}/nvm.sh && nvm install --lts"
+    }
 } 
