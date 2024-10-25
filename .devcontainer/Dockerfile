@@ -1,5 +1,5 @@
 # Use the official Microsoft Ubuntu 24.04 image as a base
-FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu-24.04
+FROM mcr.microsoft.com/vscode/devcontainers/base:1.2.0-ubuntu-24.04
 
 # Install Docker CLI Environment Variable
 ARG INSTALL_DOCKER_CLI=false
