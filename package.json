@@ -3,7 +3,7 @@
     "@commitlint/cli": "19.5.0",
     "@commitlint/config-conventional": "19.5.0",
     "@devcontainers/cli": "0.72.0",
-    "husky": "9.1.6",
+    "husky": "9.1.7",
     "mocha": "10.8.2",
     "testcontainers": "10.14.0"
   },
