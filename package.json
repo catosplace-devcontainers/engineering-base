@@ -5,7 +5,7 @@
     "@devcontainers/cli": "0.73.0",
     "husky": "9.1.7",
     "mocha": "11.1.0",
-    "testcontainers": "10.17.1"
+    "testcontainers": "10.17.2"
   },
   "scripts": {
     "prepare": "husky",
