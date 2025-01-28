@@ -36,6 +36,10 @@ RUN if [ "$INSTALL_DOCKER_CLI" = "true" ]; then \
 # Clone the adr-tools repository
 RUN git clone https://github.com/npryce/adr-tools.git /opt/adr-tools
 
+# Ensure that we can access Docker from inside the DevContainer
+RUN groupadd -g 1003 docker && \
+  usermod -aG docker vscode
+
 # Add adr-tools to the PATH
 ENV PATH="/opt/adr-tools/src:${PATH}"
 
