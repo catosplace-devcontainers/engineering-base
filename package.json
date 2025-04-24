@@ -2,7 +2,7 @@
   "devDependencies": {
     "@commitlint/cli": "19.8.0",
     "@commitlint/config-conventional": "19.8.0",
-    "@devcontainers/cli": "0.75.0",
+    "@devcontainers/cli": "0.76.0",
     "husky": "9.1.7",
     "mocha": "11.1.0",
     "testcontainers": "10.24.2"
