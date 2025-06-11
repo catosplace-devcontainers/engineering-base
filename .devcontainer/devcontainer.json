@@ -7,7 +7,7 @@
     "service": "engineering-base",
     "workspaceFolder": "/workspaces/engineering-base",
     "features": {
-        "ghcr.io/devcontainers/features/node:1.6.2": {
+        "ghcr.io/devcontainers/features/node:1.6.3": {
             "version": "22.16.0",
             "nvmVersion": "0.40.3"
         }
