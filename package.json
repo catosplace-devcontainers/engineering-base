@@ -4,7 +4,7 @@
     "@commitlint/config-conventional": "19.8.1",
     "@devcontainers/cli": "0.80.1",
     "husky": "9.1.7",
-    "mocha": "11.7.1",
+    "mocha": "11.7.2",
     "testcontainers": "11.5.1"
   },
   "scripts": {
